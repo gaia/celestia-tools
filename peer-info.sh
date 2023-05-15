@@ -1,6 +1,7 @@
 ### Parse the output of an RPC's peerlist
-### into a readable format when using the flag "readable"
-### or ready to paste into config.toml when not using the flag
+### into a readable format including information
+### whether the peer is in/outbound
+### and the likely city the peer is in
 ### Author: Gaia from FreshSTAKING
 
 ### Enter the values specific to your RPC node
