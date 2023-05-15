@@ -14,7 +14,6 @@ API_TOKEN="b160f016eb7662"
 # and will be invalidated after scoring is done
 
 ### No need to touch from here down
-flag=$1
 
 peerlist=$(curl -s -H 'Connection: close' $RPC_NODE/net_info)
 if [ $? -ne 0 ]; then
