@@ -6,11 +6,9 @@ This repo will focus on tooling built for the [Celestia Network](https://github.
 
 # Tools
 
-# Script 1) parse-output.sh: appending
+# 1) parse-output.sh
 
-`| ./parse-output.sh`
-
-to a TX-generating celestia-appd command will **strip out unnecessary output, pick and highlight the relevant messages (errors or results), and streamline checking for a success/fail of the TX after it has been included in the block**. It has three possible outcomes:
+appending `| ./parse-output.sh` to a TX-generating celestia-appd command will **strip out unnecessary output, pick and highlight the relevant messages (errors or results), and streamline checking for a success/fail of the TX after it has been included in the block**. It has three possible outcomes:
 
 a) command wasn't accepted (along with the reason why, stripping out any irrelevant information)
 
@@ -18,4 +16,6 @@ b) command was accepted and broadcasted to the network but not indexed (usually 
 
 c) command was accepted, broadcasted to the network and indexed, and the result was success or fail (in which case the reason and only the reason why is displayed, stripping out any irrelevant information).
 
-# Script 2) peer-info.sh: bash script to show a daemon's peers, in the format ID@IP:port, followed by whether the peer is outbound or inbound, along with the peer's city according to an API query to an IP location service.
+# 2) peer-info.sh
+
+Bash script to show a daemon's peers, in the format ID@IP:port, followed by whether the peer is outbound or inbound, along with the peer's city according to an API query to an IP location service.
