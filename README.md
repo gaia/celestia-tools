@@ -4,9 +4,9 @@ This repo will focus on tooling built for the [Celestia Network](https://github.
 
 ![Celestia network logo](https://avatars.githubusercontent.com/u/54859940?s=200&v=4 'Celestia network') ![FreshSTAKING logo](https://pbs.twimg.com/profile_images/1539316263314370560/syHanQz4_200x200.jpg 'FreshSTAKING')
 
-# Description
+# Tools
 
-Script 1) parse-output.sh: appending
+# Script 1) parse-output.sh: appending
 
 `| ./parse-output.sh`
 
@@ -18,4 +18,4 @@ b) command was accepted and broadcasted to the network but not indexed (usually 
 
 c) command was accepted, broadcasted to the network and indexed, and the result was success or fail (in which case the reason and only the reason why is displayed, stripping out any irrelevant information).
 
-Script 2) peer-info.sh: bash script to show a daemon's peers, in the format ID@IP:port, followed by whether the peer is outbound or inbound, along with the peer's city according to an API query to an IP location service.
+# Script 2) peer-info.sh: bash script to show a daemon's peers, in the format ID@IP:port, followed by whether the peer is outbound or inbound, along with the peer's city according to an API query to an IP location service.
