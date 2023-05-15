@@ -16,6 +16,9 @@ peerlist=$(curl -s -H 'Connection: close' $RPC_NODE/net_info | jq -r '.result.pe
 output=""
 total=0
 
+declare -A orgs
+declare -A ips
+
 while IFS= read -r line
 do
   id=$(echo $line | awk -F', ' '{print $1}')
