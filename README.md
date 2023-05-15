@@ -19,3 +19,7 @@ c) command was accepted, broadcasted to the network and indexed, and the result 
 # 2) peer-info.sh
 
 Bash script to show a daemon's peers, in the format ID@IP:port, followed by whether the peer is outbound or inbound, along with the peer's city according to an API query to an IP location service.
+
+# 3) peer-paste.sh
+
+Bash script to parse the output of an RPC's peerlist into a format ready to paste in persistent peers.
