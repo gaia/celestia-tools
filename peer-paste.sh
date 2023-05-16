@@ -36,6 +36,9 @@ do
   total=$((total + 1))
 done <<< "$peerlist"
 
+# Remove the trailing comma
+output=$(echo "$output" | sed 's/,$//')
+
 echo -e "$output" | while IFS= read -r line; do
   if [[ -z "$line" ]]; then continue; fi
   ip=$(echo $line | awk -F'[@:]' '{print $2}')
